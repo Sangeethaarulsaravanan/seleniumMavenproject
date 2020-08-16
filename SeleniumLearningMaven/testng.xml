@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="classes">
+  <test thread-count="4" name="Test" parallel="classes">
+  <groups>
+    <run>
+      <include name="smoke testing"/>
+       <exclude name="smoke testing"/>
+    </run>
+  </groups>
+ 
+ 
+    <classes>
+      <class name="com.testNG.ParallelExecution1"/>
+      <class name="com.testNG.ParallelExecution2"/>
+      <class name="com.testNG.Priorty_Testcase"/>
+      <class name="com.testNG.MyFirst_TestCase"/>
+    </classes>
+    
+</test> <!-- Test -->
+</suite> <!-- Suite -->
